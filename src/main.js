@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import "../static/base.css"
+// 轮播图插件
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
