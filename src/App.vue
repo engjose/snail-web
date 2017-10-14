@@ -25,11 +25,11 @@ export default {
   },
   methods:{
       showMenu(){
-        
+
         var height = $(window).height();
         var width = $(window).width();
         $(".navShow").width(width).height(height).css({"background": "rgba(0,0,0,0.8)"},{"display":"block"}).slideToggle("slow");
-        
+
         var attr = this.show?"glyphicon glyphicon-remove":"glyphicon glyphicon-align-left";
         $(".nav>span").attr("class",attr);
         this.show=!this.show;
@@ -45,6 +45,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   .nav{
+    position: fixed;
+    z-index:1000;
     span{
       position: fixed;
       left: 20px;
