@@ -1,12 +1,13 @@
 <template>
-  <div id="home">
+  <div id="home" onload="opener.location.reload()">
+    <Nav></Nav>
   <!-- 第一个页面：logo及页面内导航展示 -->
     <div class="section firstPage">
       <div class="head">
         DO THING & MOST PROFESSIONAL
       </div>
       <div class="logo">
-        <img src="/static/snail.jpg" alt="">
+        <img src="/static/img/snail.jpg" alt="">
       </div>
       <div class="nav">
         <ul>
@@ -21,7 +22,7 @@
     <div class="section secondPage">
       <div class="left">
         <div class="logo">
-          <img src="/static/snail.jpg" alt="">
+          <img src="/static/img/about.jpg" alt="">
         </div>
       </div>
       <div class="right">
@@ -90,8 +91,11 @@
 </template>
 
 <script>
-
+  import Nav from "./nav.vue";
 	export default {
+    components: {
+      Nav
+    },
 		data(){
 			return {
 
